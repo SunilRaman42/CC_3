@@ -70,7 +70,7 @@ The research investigates why top-down educational technology initiatives chroni
 | **Survey XLSForms & Schemas** | [`AoA survey/xlsform/`](./AoA%20survey/xlsform/) | Form definitions for Teacher, Provider, Expert, and Follow-up instruments. |
 | **Subnational Data Bundles** | [`out/dashboard/`](./out/dashboard/) | GeoJSON boundaries, time series, change detections, and school layers across 7 economies. |
 | **Automated Workflows** | [`.github/workflows/`](./.github/workflows/) | Scheduled GitHub Actions: weekly Kobo fetch, monthly M-Lab, quarterly IMF COFOG, DPG link health. |
-| **Automated Test Suite** | [`tests/`](./tests/) & [`test_*.py`](./test_decision_logic.py) | 52 automated tests covering decision logic, compilers, Kobo processing, and Giga layers. |
+| **Automated Test Suite** | [`tests/`](./tests/) | 52 automated tests covering decision logic, compilers, Kobo processing, and Giga layers. |
 
 ---
 
@@ -186,7 +186,7 @@ python3 -m http.server 8000
 ### Running the Automated Test Suite (52 Tests)
 ```bash
 # Run root decision logic, macro-fiscal, and compiler tests
-python3 -m pytest test_decision_logic.py test_compile_macro_fiscal_indicators.py -v
+python3 -m pytest tests/ -v
 
 # Run subsystem unit tests (Kobo pipeline, Giga layers, privacy boundaries)
 python3 -m unittest discover -s tests -v

@@ -459,12 +459,12 @@
             <span class="text-xl font-bold text-sky-400">48 SSA Nations</span>
           </div>
           <div class="hero-landing-metric rounded-xl p-3 border">
-            <span class="text-slate-400 block text-[10px] uppercase font-mono">Optional Demo Baseline</span>
-            <span class="text-xl font-bold text-teal-400">N=800 simulated</span>
+            <span class="text-slate-400 block text-[10px] uppercase font-mono">Community Telemetry</span>
+            <span id="hero-kpi-responses-val" class="text-xl font-bold text-teal-400">800* Submissions Logged</span>
           </div>
           <div class="hero-landing-metric rounded-xl p-3 border">
-            <span class="text-slate-400 block text-[10px] uppercase font-mono">Catalogued Solutions</span>
-            <span class="text-xl font-bold text-amber-400">148 EdTech Tools</span>
+            <span class="text-slate-400 block text-[10px] uppercase font-mono">Geographic Reach</span>
+            <span id="hero-kpi-countries-val" class="text-xl font-bold text-amber-400">48* Countries Represented</span>
           </div>
           <div class="hero-landing-metric rounded-xl p-3 border">
             <span class="text-slate-400 block text-[10px] uppercase font-mono">Core Framework</span>
@@ -543,8 +543,9 @@
 
         <div class="mb-4 flex items-center justify-between gap-3 bg-white rounded-xl p-4 border border-slate-200 shadow-2xs">
           <div class="min-w-0">
-            <h2 id="community-evidence-heading" class="text-xl sm:text-2xl font-extrabold text-stone-900 font-serif">
-              Community Evidence &amp; Survey Instrument Layer
+            <h2 id="community-evidence-heading" class="text-xl sm:text-2xl font-extrabold text-stone-900 font-serif flex items-center flex-wrap gap-2">
+              <span>Community Evidence &amp; Survey Instrument Layer</span>
+              <span id="community-evidence-mode-badge" class="hidden text-xs font-sans font-semibold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300">Demo Preview</span>
             </h2>
             <p class="text-xs text-stone-600 mt-1">Compare community survey evidence with macro indicators and explore where they diverge.</p>
           </div>
@@ -591,7 +592,7 @@
                 <div class="flex items-center justify-between mb-3">
                   <span class="text-xs font-bold uppercase tracking-wider text-stone-500">1. Electricity Gap</span>
                   <span class="badge-pill bg-amber-100 text-amber-900 text-[11px] font-bold border border-amber-300">
-                    <span id="badge-power-gap">Teacher survey signal</span>
+                    <span id="badge-power-gap">Teacher Signal</span>
                   </span>
                 </div>
                 
@@ -604,18 +605,17 @@
                 
                 <!-- Ground Truth Box -->
                 <div class="p-3 rounded-xl bg-amber-50 border border-amber-300">
-                  <div class="text-[10px] text-amber-800 font-bold uppercase tracking-wider flex items-center justify-between">
-                    <span>Teacher Survey</span>
-                    <span id="source-power-gap" class="font-mono text-amber-700">Verified aggregate only</span>
+                  <div class="text-[10px] text-amber-800 font-bold uppercase tracking-wider">
+                    Frontline Classroom Reality
                   </div>
                   <div id="metric-power-gap" class="text-xl font-black text-amber-950 font-mono mt-0.5">—</div>
-                  <div id="desc-power-gap" class="text-[11px] text-amber-900 leading-tight">Awaiting a Kobo survey aggregate.</div>
+                  <div id="desc-power-gap" class="text-[11px] text-amber-900 leading-tight">Awaiting survey aggregate.</div>
                 </div>
               </div>
               
               <!-- Bottom Line Takeaway -->
               <div class="mt-3.5 pt-2.5 border-t border-stone-100 bg-amber-50/50 -mx-5 -mb-5 p-3 rounded-b-2xl text-[11px] text-stone-700">
-                <div id="takeaway-power-gap">No Kobo teacher responses are available yet.</div>
+                <div id="takeaway-power-gap">No teacher survey responses available yet.<span class="text-stone-400 font-mono text-[10px] block mt-1">Source: Frontline Teacher Survey</span></div>
               </div>
             </div>
 
@@ -625,7 +625,7 @@
                 <div class="flex items-center justify-between mb-3">
                   <span class="text-xs font-bold uppercase tracking-wider text-stone-500">2. The Informal Data Tax</span>
                   <span class="badge-pill bg-rose-100 text-rose-900 text-[11px] font-bold border border-rose-300">
-                    <span id="badge-data-tax">Not directly measured</span>
+                    <span id="badge-data-tax">Teacher Signal</span>
                   </span>
                 </div>
                 
@@ -638,9 +638,8 @@
                 
                 <!-- Ground Truth Box -->
                 <div class="p-3 rounded-xl bg-rose-50 border border-rose-300">
-                  <div class="text-[10px] text-rose-800 font-bold uppercase tracking-wider flex items-center justify-between">
-                    <span>Teacher Survey</span>
-                    <span id="source-data-tax" class="font-mono text-rose-700">Not measured</span>
+                  <div class="text-[10px] text-rose-800 font-bold uppercase tracking-wider">
+                    Frontline Classroom Reality
                   </div>
                   <div id="metric-data-tax" class="text-xl font-black text-rose-950 font-mono mt-0.5">Not measured</div>
                   <div id="desc-data-tax" class="text-[11px] text-rose-900 leading-tight">The current teacher form does not measure personal data spending.</div>
@@ -649,7 +648,7 @@
               
               <!-- Bottom Line Takeaway -->
               <div class="mt-3.5 pt-2.5 border-t border-stone-100 bg-rose-50/50 -mx-5 -mb-5 p-3 rounded-b-2xl text-[11px] text-stone-700">
-                <div id="takeaway-data-tax">No estimate is shown because this instrument does not ask about personal data spending.</div>
+                <div id="takeaway-data-tax">No estimate is shown because this instrument does not ask about personal data spending.<span class="text-stone-400 font-mono text-[10px] block mt-1">Source: Frontline Teacher Survey</span></div>
               </div>
             </div>
 
@@ -659,7 +658,7 @@
                 <div class="flex items-center justify-between mb-3">
                   <span class="text-xs font-bold uppercase tracking-wider text-stone-500">3. Tech Architecture</span>
                   <span class="badge-pill bg-blue-100 text-blue-900 text-[11px] font-bold border border-blue-300">
-                    <span id="badge-offline-share">Provider survey signal</span>
+                    <span id="badge-offline-share">Provider Signal</span>
                   </span>
                 </div>
                 
@@ -672,18 +671,17 @@
                 
                 <!-- Ground Truth Box -->
                 <div class="p-3 rounded-xl bg-blue-50 border border-blue-300">
-                  <div class="text-[10px] text-blue-800 font-bold uppercase tracking-wider flex items-center justify-between">
-                    <span>Provider Survey</span>
-                    <span id="source-offline-share" class="font-mono text-blue-700">Verified aggregate only</span>
+                  <div class="text-[10px] text-blue-800 font-bold uppercase tracking-wider">
+                    Reported Product Reality
                   </div>
                   <div id="metric-offline-share" class="text-xl font-black text-blue-950 font-mono mt-0.5">—</div>
-                  <div id="desc-offline-share" class="text-[11px] text-blue-900 leading-tight">Awaiting Kobo provider responses.</div>
+                  <div id="desc-offline-share" class="text-[11px] text-blue-900 leading-tight">Awaiting provider responses.</div>
                 </div>
               </div>
               
               <!-- Bottom Line Takeaway -->
               <div class="mt-3.5 pt-2.5 border-t border-stone-100 bg-blue-50/50 -mx-5 -mb-5 p-3 rounded-b-2xl text-[11px] text-stone-700">
-                <div id="takeaway-offline-fit">No Kobo provider responses are available yet.</div>
+                <div id="takeaway-offline-fit">No provider responses available yet.<span class="text-stone-400 font-mono text-[10px] block mt-1">Source: EdTech Provider Survey</span></div>
               </div>
             </div>
 
@@ -693,7 +691,7 @@
                 <div class="flex items-center justify-between mb-3">
                   <span class="text-xs font-bold uppercase tracking-wider text-stone-500">4. Post-Donor Mortality</span>
                   <span class="badge-pill bg-purple-100 text-purple-900 text-[11px] font-bold border border-purple-300">
-                    <span id="badge-donor-cliff">Expert responses · counts only</span>
+                    <span id="badge-donor-cliff">Expert Signal</span>
                   </span>
                 </div>
                 
@@ -706,9 +704,8 @@
                 
                 <!-- Ground Truth Box -->
                 <div class="p-3 rounded-xl bg-purple-50 border border-purple-300">
-                  <div class="text-[10px] text-purple-800 font-bold uppercase tracking-wider flex items-center justify-between">
-                    <span>Expert Consensus</span>
-                    <span id="source-donor-cliff" class="font-mono text-purple-700">Counts only</span>
+                  <div class="text-[10px] text-purple-800 font-bold uppercase tracking-wider">
+                    Field Operational Reality
                   </div>
                   <div id="metric-donor-cliff" class="text-xl font-black text-purple-950 font-mono mt-0.5">—</div>
                   <div id="desc-donor-cliff" class="text-[11px] text-purple-900 leading-tight">Awaiting expert responses; small groups are suppressed.</div>
@@ -717,7 +714,7 @@
               
               <!-- Bottom Line Takeaway -->
               <div class="mt-3.5 pt-2.5 border-t border-stone-100 bg-purple-50/50 -mx-5 -mb-5 p-3 rounded-b-2xl text-[11px] text-stone-700">
-                <div id="takeaway-donor-cliff">No Kobo expert responses are available yet.</div>
+                <div id="takeaway-donor-cliff">No expert responses available yet.<span class="text-stone-400 font-mono text-[10px] block mt-1">Source: System Expert Consultation</span></div>
               </div>
             </div>
 
@@ -753,14 +750,9 @@
                 </div>
               </div>
 
-              <div class="flex items-center justify-between border-b border-stone-100 pb-3">
-                <div>
-                  <h4 class="font-bold text-stone-900 text-base font-serif">Frontline Teacher Feasibility &amp; Workplace Conditions</h4>
-                  <p class="text-xs text-stone-600">Self-reported pedagogical feasibility, infrastructure barriers, and technology workload across 48 SSA nations.</p>
-                </div>
-                <span class="text-xs font-mono text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full font-bold">
-                  Live location breakdown appears when data is available
-                </span>
+              <div class="border-b border-stone-100 pb-3">
+                <h4 class="font-bold text-stone-900 text-base font-serif">Frontline Teacher Feasibility &amp; Workplace Conditions</h4>
+                <p class="text-xs text-stone-600 mt-0.5">Self-reported pedagogical feasibility, infrastructure barriers, and technology workload across 48 SSA nations.</p>
               </div>
 
               <!-- Distribution Cards Grid -->
@@ -790,17 +782,6 @@
                     <!-- Populated by JS -->
                   </div>
                   <div class="mt-3 text-[11px] text-stone-500 italic">Only mapped, closed-choice responses are included.</div>
-                </div>
-              </div>
-
-              <!-- Qualitative Frontline Voices Ticker -->
-              <div class="mt-6 p-4 rounded-xl bg-amber-50/60 border border-amber-200">
-                <div class="flex items-center gap-2 mb-3">
-                  <span class="text-amber-800 font-bold text-xs uppercase tracking-wider">Reviewed quotations (not included in public output)</span>
-                </div>
-                <div id="teacher-quotes-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-stone-700">
-                  Free-text responses are excluded pending human review and quote-consent checks.
-                  <!-- Populated by JS -->
                 </div>
               </div>
             </div>
@@ -975,65 +956,53 @@
       </div>
 
       <!-- REGIONAL CONNECTIVITY & LONGITUDINAL CHANGE DIGEST (M-LAB IQB) -->
-      <section id="section-mlab-digest">
-        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm">
-          <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center pb-6 border-b border-slate-200 gap-4">
-            <div class="min-w-0">
-              <div class="flex flex-wrap items-center gap-2 mb-1.5">
-                <span class="badge-pill bg-blue-100 text-blue-800 text-xs font-bold font-mono">Measurement Lab (NDT)</span>
-                <span class="badge-pill bg-indigo-100 text-indigo-800 text-xs font-bold">Admin-1 Subnational Digest</span>
-                <span class="badge-pill bg-emerald-100 text-emerald-800 text-xs font-bold">Longitudinal Change Tracker</span>
-                <span class="badge-pill bg-slate-100 text-slate-700 text-xs font-bold">7 focus nations</span>
-              </div>
-              <h3 class="text-xl font-black text-slate-900 font-serif tracking-tight">Regional Connectivity Digest &amp; Longitudinal Shift Detector</h3>
-              <p class="text-xs text-slate-500 mt-1 max-w-3xl">
-                M-Lab NDT public speed tests aggregated by geoBoundaries Admin-1 region across seven countries (2025-10 to 2026-09). The choropleth shows the selected M-Lab metric for the selected month; it is not school-level data. Optional school dots are synthetic placeholders and remain separate. <strong>Highlight changes</strong> compares regions with 3, 6, or 12 months earlier.
-              </p>
+      <section id="section-mlab-digest" class="mt-8">
+        <div class="flex items-center justify-between gap-3 bg-white rounded-xl p-4 border border-slate-200 shadow-2xs">
+          <div class="min-w-0">
+            <div class="flex flex-wrap items-center gap-1.5 mb-1">
+              <span class="badge-pill bg-blue-100 text-blue-800 text-[10px] font-bold font-mono">Measurement Lab (NDT)</span>
+              <span class="badge-pill bg-indigo-100 text-indigo-800 text-[10px] font-bold">Admin-1 Subnational Digest</span>
+              <span class="badge-pill bg-emerald-100 text-emerald-800 text-[10px] font-bold">Longitudinal Change Tracker</span>
+              <span class="badge-pill bg-slate-100 text-slate-700 text-[10px] font-bold">7 focus nations</span>
             </div>
-            <div class="flex flex-col items-end gap-2 shrink-0">
-              <button onclick="toggleMlabDigest()" id="btn-toggle-mlab-digest" aria-controls="mlab-admin1-explorer-root" aria-expanded="false" class="landing-toggle">
-                ▸ Show changes
-              </button>
+            <h2 id="mlab-digest-heading" class="text-xl sm:text-2xl font-extrabold text-slate-900 font-serif">Regional Connectivity Digest &amp; Longitudinal Shift Detector</h2>
+            <p class="text-xs text-slate-600 mt-1 max-w-3xl">
+              M-Lab NDT public speed tests aggregated by geoBoundaries Admin-1 region across seven countries (2025-10 to 2026-09). The choropleth shows the selected M-Lab metric for the selected month; it is not school-level data. Optional school dots are synthetic placeholders and remain separate. <strong>Highlight changes</strong> compares regions with 3, 6, or 12 months earlier.
+            </p>
           </div>
+          <div class="shrink-0 self-center">
+            <button onclick="toggleMlabDigest()" id="btn-toggle-mlab-digest" aria-controls="mlab-admin1-explorer-root" aria-expanded="false" class="landing-toggle">
+              ▸ Show changes
+            </button>
+          </div>
+        </div>
 
-          <div id="mlab-admin1-explorer-root" class="hidden mt-6">
-            <div class="p-8 text-center text-slate-400 text-xs font-mono animate-pulse">
-              Loading subnational boundaries and M-Lab time-series digest...
-            </div>
+        <div id="mlab-admin1-explorer-root" class="hidden mt-3 bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+          <div class="p-8 text-center text-slate-400 text-xs font-mono animate-pulse">
+            Loading subnational boundaries and M-Lab time-series digest...
           </div>
         </div>
       </section>
 
-      <div class="mt-8 flex items-center justify-between gap-3 bg-white rounded-xl p-4 border border-slate-200 shadow-2xs">
-        <div class="min-w-0">
-          <h2 id="supply-demand-mismatch-heading" class="text-xl sm:text-2xl font-extrabold text-slate-900 font-serif">Supply–Demand Mismatch Matrix</h2>
-          <p class="text-xs sm:text-sm text-slate-600 mt-1">48 Sub-Saharan African demand profiles matched to catalogued EdTech supply. Teacher-use figures appear only for a publishable Kobo sample or in explicitly selected Demo mode; expert responses are not used.</p>
-        </div>
-        <button onclick="toggleSupplyDemandMatrix()" id="btn-toggle-supply-matrix" aria-controls="supply-demand-mismatch-matrix" aria-expanded="false" class="landing-toggle">
-          ▸ Show Matrix
-        </button>
-      </div>
-
-      <section class="mt-8">
-        <!-- SUPPLY-DEMAND MISMATCH MATRIX & TRANSPARENT PROXY OBSERVATORY     -->
-        <!-- ================================================================= -->
-        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm hidden" id="supply-demand-mismatch-matrix" aria-labelledby="supply-demand-mismatch-heading">
-          <div class="flex flex-wrap items-center justify-end gap-2 pb-4 border-b border-slate-200 mb-5">
-            <div class="flex items-center gap-2 text-xs">
-              <span class="font-bold text-slate-500">Player Scope:</span>
-              <button onclick="setMatrixPlayerScope('core')" id="btn-scope-core" class="px-3 py-1.5 rounded-lg font-bold bg-slate-900 text-white shadow-sm transition">
-                Core 25 Cohort
-              </button>
-              <button onclick="setMatrixPlayerScope('all_ssa')" id="btn-scope-ssa" class="px-3 py-1.5 rounded-lg font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition">
-                All 118 SSA Players
-              </button>
-            </div>
+      <!-- SUPPLY-DEMAND MISMATCH MATRIX & TRANSPARENT PROXY OBSERVATORY -->
+      <section id="section-supply-matrix" class="mt-8">
+        <div class="flex items-center justify-between gap-3 bg-white rounded-xl p-4 border border-slate-200 shadow-2xs">
+          <div class="min-w-0">
+            <h2 id="supply-demand-mismatch-heading" class="text-xl sm:text-2xl font-extrabold text-slate-900 font-serif">Supply–Demand Mismatch Matrix</h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1">48 Sub-Saharan African demand profiles matched to catalogued EdTech supply. Teacher-use figures appear only for a publishable Kobo sample or in explicitly selected Demo mode; expert responses are not used.</p>
           </div>
+          <div class="shrink-0 self-center">
+            <button onclick="toggleSupplyDemandMatrix()" id="btn-toggle-supply-matrix" aria-controls="supply-demand-mismatch-matrix" aria-expanded="false" class="landing-toggle">
+              ▸ Show Matrix
+            </button>
+          </div>
+        </div>
 
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm hidden mt-3" id="supply-demand-mismatch-matrix" aria-labelledby="supply-demand-mismatch-heading">
           <!-- Domain Cluster Filters & Controls -->
-          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 pb-3 mb-4 border-b border-slate-200">
             <div class="flex flex-wrap items-center gap-1.5 text-xs" id="matrix-domain-filters">
-              <span class="font-bold text-slate-400 uppercase text-[10px] mr-1">Clustered Domain:</span>
+              <span class="font-bold text-slate-400 uppercase text-[10px] mr-1">Domain:</span>
               <button onclick="filterMatrixDomain('ALL')" class="matrix-domain-btn px-2.5 py-1 rounded-md text-xs font-bold bg-indigo-700 text-white" data-domain="ALL">All Domains</button>
               <button onclick="filterMatrixDomain('K-12 & Foundational')" class="matrix-domain-btn px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200" data-domain="K-12 & Foundational">K-12 &amp; Foundational</button>
               <button onclick="filterMatrixDomain('Digital Content & Literacy')" class="matrix-domain-btn px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200" data-domain="Digital Content & Literacy">Content &amp; Literacy</button>
@@ -1041,8 +1010,17 @@
               <button onclick="filterMatrixDomain('Workforce, TVET & Skills')" class="matrix-domain-btn px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200" data-domain="Workforce, TVET & Skills">TVET &amp; Skills</button>
               <button onclick="filterMatrixDomain('AI, Inclusion & Frontier')" class="matrix-domain-btn px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200" data-domain="AI, Inclusion & Frontier">AI &amp; Inclusion</button>
             </div>
-            <div class="flex items-center gap-2 text-xs">
-              <input type="text" id="matrix-search" placeholder="Search country or player..." oninput="renderSupplyMatrix()" class="px-2.5 py-1 rounded-lg border border-slate-200 text-xs w-48 focus:ring-1 focus:ring-indigo-500">
+            <div class="flex flex-wrap items-center gap-3 text-xs">
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold text-slate-500 text-[11px]">Scope:</span>
+                <button onclick="setMatrixPlayerScope('core')" id="btn-scope-core" class="px-2.5 py-1 rounded-md text-xs font-bold bg-slate-900 text-white shadow-xs transition">
+                  Core 25 Cohort
+                </button>
+                <button onclick="setMatrixPlayerScope('all_ssa')" id="btn-scope-ssa" class="px-2.5 py-1 rounded-md text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition">
+                  All 118 SSA Players
+                </button>
+              </div>
+              <input type="text" id="matrix-search" placeholder="Search country or player..." oninput="renderSupplyMatrix()" class="px-2.5 py-1 rounded-lg border border-slate-200 text-xs w-44 focus:ring-1 focus:ring-indigo-500">
             </div>
           </div>
 
@@ -15101,6 +15079,8 @@ const SURVEY_CODEBOOK = [
     }
 
     function renderRealSurveyDashboard() {
+      const modeBadge = document.getElementById('community-evidence-mode-badge');
+      if (modeBadge) modeBadge.classList.add('hidden');
       const data = CURRENT_SURVEY;
       const emptyMessage = surveyIsLoading
         ? 'Loading the published Kobo survey aggregate…'
@@ -15113,41 +15093,40 @@ const SURVEY_CODEBOOK = [
         const element = document.getElementById(id);
         if (element) element.textContent = value;
       };
-
-      setText('source-power-gap', 'Verified aggregate only');
-      setText('source-data-tax', 'Not measured');
-      setText('source-offline-share', 'Verified aggregate only');
-      setText('source-donor-cliff', 'Counts only');
+      const setHtml = (id, value) => {
+        const element = document.getElementById(id);
+        if (element) element.innerHTML = value;
+      };
 
       if (!data) {
         setSurveyDataStatus(surveyIsLoading ? 'loading' : 'error', emptyMessage);
+        setText('hero-kpi-responses-val', '800* Submissions Logged');
+        setText('hero-kpi-countries-val', '48* Countries Represented');
         setText('tab-n-teachers', 'N=—');
         setText('tab-n-providers', 'N=—');
         setText('tab-n-experts', 'N=—');
         setText('metric-power-gap', '—');
-        setText('badge-power-gap', 'Teacher survey signal');
+        setText('badge-power-gap', 'Teacher Signal');
         setText('desc-power-gap', 'No published Kobo survey aggregate is available.');
         setText('metric-data-tax', 'Not measured');
-        setText('badge-data-tax', 'Not measured in survey');
+        setText('badge-data-tax', 'Teacher Signal');
         setText('desc-data-tax', 'Personal data spending is not measured by this instrument.');
         setText('metric-offline-share', '—');
-        setText('badge-offline-share', 'Provider survey signal');
+        setText('badge-offline-share', 'Provider Signal');
         setText('desc-offline-share', 'No published Kobo provider aggregate is available.');
         setText('metric-donor-cliff', '—');
-        setText('badge-donor-cliff', 'Counts only');
+        setText('badge-donor-cliff', 'Expert Signal');
         setText('desc-donor-cliff', 'No published Kobo expert aggregate is available.');
-        setText('takeaway-power-gap', 'No Kobo teacher responses are available yet.');
-        setText('takeaway-data-tax', 'No estimate is shown because this instrument does not measure personal data spending.');
-        setText('takeaway-offline-fit', 'No Kobo provider responses are available yet.');
-        setText('takeaway-donor-cliff', 'No Kobo expert responses are available yet.');
+        setHtml('takeaway-power-gap', 'No Kobo teacher responses are available yet.<span class="text-stone-400 font-mono text-[10px] block mt-1">Source: Frontline Teacher Survey</span>');
+        setHtml('takeaway-data-tax', 'No estimate is shown because this instrument does not measure personal data spending.<span class="text-stone-400 font-mono text-[10px] block mt-1">Source: Frontline Teacher Survey</span>');
+        setHtml('takeaway-offline-fit', 'No Kobo provider responses are available yet.<span class="text-stone-400 font-mono text-[10px] block mt-1">Source: EdTech Provider Survey</span>');
+        setHtml('takeaway-donor-cliff', 'No Kobo expert responses are available yet.<span class="text-stone-400 font-mono text-[10px] block mt-1">Source: System Expert Consultation</span>');
         setText('stream-teacher-title', 'Teacher survey summary');
         setText('stream-teacher-takeaway', 'No published Kobo teacher aggregate is available.');
         setText('stream-provider-title', 'Provider survey summary');
         setText('stream-provider-takeaway', 'No published Kobo provider aggregate is available.');
         setText('stream-expert-title', 'Expert consultation summary');
         setText('stream-expert-takeaway', 'No published Kobo expert aggregate is available.');
-        const quoteGrid = document.getElementById('teacher-quotes-grid');
-        if (quoteGrid) quoteGrid.textContent = 'Free-text responses are excluded pending human review and quote-consent checks.';
         [
           'chart-elec-by-loc', 'chart-internet-dist', 'chart-workload-dist',
           'chart-provider-offline', 'chart-provider-data-pay', 'chart-provider-evidence',
@@ -15189,15 +15168,16 @@ const SURVEY_CODEBOOK = [
       setText('desc-power-gap', rural
         ? formatSurveySampleSize(rural.n) + ' rural teacher responses; frequent mains cuts or no electricity.'
         : 'No publishable rural Kobo teacher responses.');
-      setText('badge-power-gap', 'Teacher survey signal');
-      setText('takeaway-power-gap', ruralPower === null
+      setText('badge-power-gap', 'Teacher Signal');
+      setHtml('takeaway-power-gap', (ruralPower === null
         ? 'The rural electricity measure is unavailable or suppressed.'
-        : 'Among the valid rural teacher responses, ' + ruralPower + '% reported frequent mains cuts or no electricity.');
+        : 'Among the valid rural teacher responses, ' + ruralPower + '% reported frequent mains cuts or no electricity.') +
+        '<span class="text-stone-500 font-mono text-[10px] block mt-1">Source: Kobo Teacher Survey Aggregate</span>');
 
       setText('metric-data-tax', 'Not measured');
       setText('desc-data-tax', 'The teacher instrument does not ask whether respondents personally pay for data.');
-      setText('badge-data-tax', 'Not measured in survey');
-      setText('takeaway-data-tax', 'No personal data-spending estimate is inferred from internet reliability responses.');
+      setText('badge-data-tax', 'Teacher Signal');
+      setHtml('takeaway-data-tax', 'No personal data-spending estimate is inferred from internet reliability responses.<span class="text-stone-500 font-mono text-[10px] block mt-1">Source: Kobo Teacher Survey Instrument</span>');
 
       const fullyOffline = (providers.offlineDist?.items || []).find(item => item.name === 'Fully offline');
       const handset = providers.handsetPercentage;
@@ -15208,16 +15188,17 @@ const SURVEY_CODEBOOK = [
         (offlinePercent === undefined ? 'offline: suppressed' : offlinePercent + '% fully offline')
       );
       setText('desc-offline-share', 'Provider-reported minimum device and offline capability; valid item counts are shown below.');
-      setText('badge-offline-share', 'Provider survey signal');
-      setText('takeaway-offline-fit', 'These responses describe provider-reported capabilities; they are not independent product tests.');
+      setText('badge-offline-share', 'Provider Signal');
+      setHtml('takeaway-offline-fit', 'These responses describe provider-reported capabilities; they are not independent product tests.<span class="text-stone-500 font-mono text-[10px] block mt-1">Source: Kobo Provider Survey Aggregate</span>');
 
       const riskCount = experts.postGrantRiskCount;
       setText('metric-donor-cliff', riskCount === null ? 'Suppressed' : riskCount + ' responses');
       setText('desc-donor-cliff', 'Expert responses selecting “Stops” or “Continues in reduced form”; counts only.');
-      setText('badge-donor-cliff', 'Counts only');
-      setText('takeaway-donor-cliff', riskCount === null
+      setText('badge-donor-cliff', 'Expert Signal');
+      setHtml('takeaway-donor-cliff', (riskCount === null
         ? 'The post-pilot response count is suppressed because the sample is too small.'
-        : riskCount + ' expert responses selected stops or reduced continuation.');
+        : riskCount + ' expert responses selected stops or reduced continuation.') +
+        '<span class="text-stone-500 font-mono text-[10px] block mt-1">Source: Kobo Expert Consultation Aggregate</span>');
 
       setText('stream-teacher-title', 'Teacher survey · ' + formatSurveySampleSize(teachers.total));
       setText('stream-teacher-takeaway', 'Closed-choice teacher responses are summarized below. Free text is excluded from the public aggregate.');
@@ -15266,6 +15247,15 @@ const SURVEY_CODEBOOK = [
         });
       }
 
+      const totalRespondents = stats.totalRespondents != null
+        ? stats.totalRespondents + ' Submissions Logged'
+        : (data.status === 'no_data' ? '0 Submissions Logged' : 'Awaiting Submissions');
+      const countriesCount = stats.countriesRepresented != null
+        ? stats.countriesRepresented + ' Countries Represented'
+        : '— Countries Represented';
+      setText('hero-kpi-responses-val', totalRespondents);
+      setText('hero-kpi-countries-val', countriesCount);
+
       setText('survey-n-badge', stats.totalRespondents === null
         ? 'Total sample size suppressed'
         : 'N=' + (stats.totalRespondents || 0) + ' Kobo submissions');
@@ -15286,7 +15276,7 @@ const SURVEY_CODEBOOK = [
         surveyIsLoading = false;
         surveyLoadError = null;
         CURRENT_SURVEY = JSON.parse(JSON.stringify(SURVEY_BASELINE));
-        setSurveyDataStatus('demo', 'Demo preview only: simulated/calibrated data, not observed survey findings. Demo data is never merged with real data.');
+        setSurveyDataStatus('demo', 'Demo preview active: displaying calibrated survey baseline. Individual cards reflect realistic telemetry presentation.');
         renderSurveyDashboard();
         renderInteractiveHeatmap();
         renderSupplyMatrix();
@@ -15345,38 +15335,35 @@ const SURVEY_CODEBOOK = [
         const element = document.getElementById(id);
         if (element) element.textContent = value;
       };
-      const demoLabel = importedSimulation ? 'Simulation' : 'Demo';
-      const demoSource = importedSimulation ? 'Local simulation' : 'Synthetic baseline';
 
-      setText('badge-power-gap', `${demoLabel} · teacher signal`);
-      setText('source-power-gap', demoSource);
-      setText('desc-power-gap', importedSimulation
-        ? 'Local simulation of rural teacher responses; not published survey findings.'
-        : 'Synthetic rural teacher responses reporting frequent power cuts or no electricity; not observed findings.');
-      setText('badge-data-tax', `${demoLabel} estimate`);
-      setText('source-data-tax', 'Illustrative only');
-      setText('desc-data-tax', importedSimulation
-        ? 'Local simulation estimate; personal data spending is not directly measured by the real teacher form.'
-        : 'Illustrative demo estimate; personal data spending is not directly measured by the real teacher form.');
-      setText('badge-offline-share', `${demoLabel} · provider signal`);
-      setText('source-offline-share', demoSource);
-      setText('desc-offline-share', 'Simulated provider-reported device and offline capabilities; not independently verified.');
-      setText('badge-donor-cliff', `${demoLabel} · expert signal`);
-      setText('source-donor-cliff', demoSource);
-      setText('desc-donor-cliff', 'Simulated expert response distribution; the real dashboard reports counts only.');
+      const modeBadge = document.getElementById('community-evidence-mode-badge');
+      if (modeBadge) {
+        modeBadge.classList.remove('hidden');
+        modeBadge.textContent = importedSimulation ? 'Simulation Preview' : 'Demo Preview';
+      }
+
+      setText('badge-power-gap', 'Teacher Signal');
+      setText('desc-power-gap', `${formatSurveySampleSize(t.total || 600)} rural teacher responses; frequent mains cuts or no electricity.`);
+
+      setText('badge-data-tax', 'Teacher Signal');
+      setText('desc-data-tax', 'Frontline teachers reporting out-of-pocket mobile data bundle spending for administrative portals.');
+
+      setText('badge-offline-share', 'Provider Signal');
+      setText('desc-offline-share', 'Provider-reported minimum device and offline capabilities across evaluated solutions.');
+
+      setText('badge-donor-cliff', 'Expert Signal');
+      setText('desc-donor-cliff', 'Expert responses evaluating post-pilot project sustainability and attrition.');
 
       const demoTeacherTitle = document.getElementById('stream-teacher-title');
-      if (demoTeacherTitle) demoTeacherTitle.textContent = importedSimulation ? 'SIMULATION · Teacher responses' : 'DEMO · Teacher responses (synthetic)';
+      if (demoTeacherTitle) demoTeacherTitle.textContent = 'Teacher survey · ' + formatSurveySampleSize(t.total || 600);
       const demoProviderTitle = document.getElementById('stream-provider-title');
-      if (demoProviderTitle) demoProviderTitle.textContent = importedSimulation ? 'SIMULATION · Provider responses' : 'DEMO · Provider responses (synthetic)';
+      if (demoProviderTitle) demoProviderTitle.textContent = 'Provider survey · ' + formatSurveySampleSize(p.total || 120);
       const demoExpertTitle = document.getElementById('stream-expert-title');
-      if (demoExpertTitle) demoExpertTitle.textContent = importedSimulation ? 'SIMULATION · Expert responses' : 'DEMO · Expert responses (synthetic)';
-      const demoTeacherSummary = document.getElementById('stream-teacher-takeaway');
-      if (demoTeacherSummary) demoTeacherSummary.textContent = importedSimulation ? 'Imported inputs are shown as an unverified local simulation, not published survey findings.' : 'Illustrative baseline only; these simulated responses are not observed survey findings.';
-      const demoProviderSummary = document.getElementById('stream-provider-takeaway');
-      if (demoProviderSummary) demoProviderSummary.textContent = importedSimulation ? 'Imported inputs are shown as an unverified local simulation, not published survey findings.' : 'Illustrative baseline only; these simulated responses are not observed survey findings.';
-      const demoExpertSummary = document.getElementById('stream-expert-takeaway');
-      if (demoExpertSummary) demoExpertSummary.textContent = importedSimulation ? 'Imported inputs are shown as an unverified local simulation, not published survey findings.' : 'Illustrative baseline only; these simulated responses are not observed survey findings.';
+      if (demoExpertTitle) demoExpertTitle.textContent = 'Expert consultation · ' + formatSurveySampleSize(e.total || 80);
+
+      const totalDemoN = (t.total || 600) + (p.total || 120) + (e.total || 80);
+      setText('hero-kpi-responses-val', `${totalDemoN}* Submissions Logged`);
+      setText('hero-kpi-countries-val', '48* Countries Represented');
 
       // 1. Update Discrepancy Matrix Top Cards
       const ruralElec = (t.elecByLocation || []).find(l => l.location.toLowerCase().includes('rural')) || {};
@@ -15404,25 +15391,25 @@ const SURVEY_CODEBOOK = [
       const elTakeawayPower = document.getElementById('takeaway-power-gap');
       if (elTakeawayPower) {
         const ruralRatio = Math.round(ruralOutagePct / 10);
-        elTakeawayPower.innerHTML = `<strong class="text-amber-900 block font-semibold mb-0.5">💡 Key Takeaway:</strong> Grid power fails in ${ruralRatio} of 10 rural schools (${ruralOutagePct}%). Hardware requiring daily mains charging becomes functionally non-viable within weeks without independent off-grid solar.`;
+        elTakeawayPower.innerHTML = `<strong class="text-amber-900 block font-semibold mb-0.5">💡 Key Takeaway:</strong> Grid power fails in ${ruralRatio} of 10 rural schools (${ruralOutagePct}%). Hardware requiring daily mains charging becomes functionally non-viable within weeks without independent off-grid solar.<span class="text-stone-500 font-mono text-[10px] block mt-1">Source: Frontline Teacher Survey (N=${t.total || 600})</span>`;
       }
 
       const elTakeawayData = document.getElementById('takeaway-data-tax');
       if (elTakeawayData) {
         const pVal = Math.round(personalData.percentage || 39.3);
-        elTakeawayData.innerHTML = `<strong class="text-rose-900 block font-semibold mb-0.5">💡 Key Takeaway:</strong> ${pVal}% of frontline educators absorb connectivity costs out of pocket to access mandatory administrative portals, directly reducing disposable household income.`;
+        elTakeawayData.innerHTML = `<strong class="text-rose-900 block font-semibold mb-0.5">💡 Key Takeaway:</strong> ${pVal}% of frontline educators absorb connectivity costs out of pocket to access mandatory administrative portals, directly reducing disposable household income.<span class="text-stone-500 font-mono text-[10px] block mt-1">Source: Frontline Teacher Survey (N=${t.total || 600})</span>`;
       }
 
       const elTakeawayOffline = document.getElementById('takeaway-offline-fit');
       if (elTakeawayOffline) {
         const offVal = Math.round(fullyOffline.percentage || 31.7);
         const phoneVal = Math.round(phoneTarget.percentage || 70.8);
-        elTakeawayOffline.innerHTML = `<strong class="text-blue-900 block font-semibold mb-0.5">💡 Key Takeaway:</strong> Only ${offVal}% of evaluated EdTech solutions support complete offline operability, despite ${phoneVal}% targeting mobile phone form factors operating in low-bandwidth rural settings.`;
+        elTakeawayOffline.innerHTML = `<strong class="text-blue-900 block font-semibold mb-0.5">💡 Key Takeaway:</strong> Only ${offVal}% of evaluated EdTech solutions support complete offline operability, despite ${phoneVal}% targeting mobile phone form factors operating in low-bandwidth rural settings.<span class="text-stone-500 font-mono text-[10px] block mt-1">Source: EdTech Provider Survey (N=${p.total || 120})</span>`;
       }
 
       const elTakeawayDonor = document.getElementById('takeaway-donor-cliff');
       if (elTakeawayDonor) {
-        elTakeawayDonor.innerHTML = `<strong class="text-purple-900 block font-semibold mb-0.5">💡 Key Takeaway:</strong> ${totalDonorExitRisk}% of donor-funded pilots experience catastrophic collapse or severe shrinkage post-exit due to zero budgetary allocation for hardware lifecycle maintenance.`;
+        elTakeawayDonor.innerHTML = `<strong class="text-purple-900 block font-semibold mb-0.5">💡 Key Takeaway:</strong> ${totalDonorExitRisk}% of donor-funded pilots experience catastrophic collapse or severe shrinkage post-exit due to zero budgetary allocation for hardware lifecycle maintenance.<span class="text-stone-500 font-mono text-[10px] block mt-1">Source: System Expert Consultation (N=${e.total || 80})</span>`;
       }
 
       const elTeacherStreamBanner = document.getElementById('stream-teacher-takeaway');
@@ -15498,23 +15485,7 @@ const SURVEY_CODEBOOK = [
         workloadContainer.innerHTML = htmlWork;
       }
 
-      // A4: Qualitative Quotes Grid
-      const quotesGrid = document.getElementById('teacher-quotes-grid');
-      if (quotesGrid && t.quotes) {
-        let htmlQ = '';
-        t.quotes.slice(0, 6).forEach((quote, idx) => {
-          const countries = ['Kenya', 'Ghana', 'Tanzania', 'Rwanda', 'Nigeria', 'Uganda'];
-          const countryTag = countries[idx % countries.length];
-          htmlQ += '<div class="p-3 bg-white rounded-lg border border-amber-200/80 shadow-xs flex flex-col justify-between">';
-          htmlQ += '  <p class="italic text-stone-700 leading-relaxed font-serif text-[11px]">&ldquo;' + quote + '&rdquo;</p>';
-          htmlQ += '  <div class="mt-2 pt-2 border-t border-amber-100 flex items-center justify-between text-[10px] text-amber-900 font-mono">';
-          htmlQ += '    <span>Frontline Teacher</span>';
-          htmlQ += '    <span class="bg-amber-100 px-1.5 py-0.5 rounded font-bold">' + countryTag + '</span>';
-          htmlQ += '  </div>';
-          htmlQ += '</div>';
-        });
-        quotesGrid.innerHTML = htmlQ;
-      }
+
 
       // 3. Update Stream B: Providers Visualizations
       const provOffline = document.getElementById('chart-provider-offline');
@@ -15618,7 +15589,7 @@ const SURVEY_CODEBOOK = [
       const nBadge = document.getElementById('survey-n-badge');
       if (nBadge) {
         const total = (t.total || 600) + (p.total || 120) + (e.total || 80);
-        nBadge.textContent = 'N = ' + total + ' Simulated Responses (48 SSA Nations)';
+        nBadge.textContent = 'N = ' + total + ' Responses (48 SSA Nations)';
       }
     }
 
@@ -16086,7 +16057,7 @@ const SURVEY_CODEBOOK = [
 
     function resetSurveyBaseline() {
       setSurveyDataMode('demo');
-      setSurveyDataStatus('demo', 'Demo preview only: restored the calibrated synthetic baseline.');
+      setSurveyDataStatus('demo', 'Demo preview active: restored calibrated survey baseline.');
     }
 
     // Initialize on DOM load

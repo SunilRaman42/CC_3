@@ -23,7 +23,7 @@ from scripts.compile_macro_fiscal_indicators import (
 )
 
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 PROCESSED_DIR = DATA_DIR / "processed"
 

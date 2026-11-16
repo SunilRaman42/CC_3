@@ -321,7 +321,6 @@ The repository incorporates 52 automated tests spanning decision logic, macro-fi
 * [`EdTech_Readiness_Check_Printable.html`](./EdTech_Readiness_Check_Printable.html) — Standalone printable pack for classroom feasibility and SMC rubrics.
 * [`Rotation_Planner_Printable.html`](./Rotation_Planner_Printable.html) — Standalone printable pack for 3-station TaRL rotation timetables.
 * [`Vetted_Solutions_Directory_Printable.html`](./Vetted_Solutions_Directory_Printable.html) — Standalone printable catalog of resilient offline DPGs.
-* [`example.html`](./example.html) — Standalone test harness for the M-Lab Admin-1 explorer module.
 
 ### Modular JavaScript Engines (`js/`)
 * [`js/admin1_explorer.js`](./js/admin1_explorer.js) — ES module rendering D3 v7 subnational choropleth map, sparklines, and change markers.
@@ -344,10 +343,10 @@ The repository incorporates 52 automated tests spanning decision logic, macro-fi
 * [`scripts/serve_dev.py`](./scripts/serve_dev.py) — Local development static server.
 
 ### Automated Test Suite (52 Tests)
-* [`test_decision_logic.py`](./test_decision_logic.py) — 15 tests covering Gatekeeping thresholds, statutory vetoes, and TaRL rotation arithmetic.
-* [`test_compile_macro_fiscal_indicators.py`](./test_compile_macro_fiscal_indicators.py) — 8 tests covering macro-fiscal calculations, ISO coverage, and currency conversion.
-* [`test_fetch_iati_funding.py`](./test_fetch_iati_funding.py) — 6 tests covering IATI Datastore API queries, sector codes, and USD aggregation.
-* [`test_fetch_imf_cofog.py`](./test_fetch_imf_cofog.py) — 4 tests covering IMF GFS COFOG share parsing, file schemas, and CLI behavior.
+* [`test_decision_logic.py`](./tests/test_decision_logic.py) — 15 tests covering Gatekeeping thresholds, statutory vetoes, and TaRL rotation arithmetic.
+* [`test_compile_macro_fiscal_indicators.py`](./tests/test_compile_macro_fiscal_indicators.py) — 8 tests covering macro-fiscal calculations, ISO coverage, and currency conversion.
+* [`test_fetch_iati_funding.py`](./tests/test_fetch_iati_funding.py) — 6 tests covering IATI Datastore API queries, sector codes, and USD aggregation.
+* [`test_fetch_imf_cofog.py`](./tests/test_fetch_imf_cofog.py) — 4 tests covering IMF GFS COFOG share parsing, file schemas, and CLI behavior.
 * [`tests/test_process_kobo_surveys.py`](./tests/test_process_kobo_surveys.py) — 8 tests covering Kobo data sanitization, small-sample suppression, and schema validation.
 * [`tests/test_fetch_kobo_submissions.py`](./tests/test_fetch_kobo_submissions.py) — 6 tests covering pagination, security boundaries, and demo mode.
 * [`tests/test_make_synthetic_giga.py`](./tests/test_make_synthetic_giga.py) — 3 tests covering synthetic Giga school coordinate and attribute generation.
@@ -376,7 +375,7 @@ python3 -m http.server 8000
 ### Running the Test Suite
 ```bash
 # Run root decision logic, macro-fiscal, and compiler tests (23 tests passing synchronously)
-python3 -m pytest test_decision_logic.py test_compile_macro_fiscal_indicators.py -v
+python3 -m pytest tests/ -v
 
 # Run Kobo pipeline, privacy boundary, and subsystem tests
 python3 -m unittest discover -s tests -v

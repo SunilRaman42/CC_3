@@ -13,3 +13,6 @@ __pycache__/
 data/raw/kobo/
 data/raw/SSA_Survey_Responses_Live.xlsx
 data/processed/survey_dashboard_live.json
+
+# AoA survey source docs — Kobo links already distributed to end-users; keep locally for pipeline only
+AoA survey/
